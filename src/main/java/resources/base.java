@@ -1,4 +1,4 @@
-package Automation.SeleniumProject;
+package resources;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,7 +22,7 @@ public class base {
 
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream(
-				"D:\\work\\12_21_workspace\\SeleniumProject\\src\\main\\java\\data.properties");
+				"D:\\work\\12_21_workspace\\SeleniumProject\\src\\main\\java\\resources\\data.properties");
 
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
@@ -39,15 +39,24 @@ public class base {
 			driver = new FirefoxDriver();
 			// firefox code
 		} else if (browserName.equals("edge")) {
-			System.setProperty("webdriver.edge.driver",
-					"C:\\Users\\hsonawane\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "D:\\work\\drivers\\edgedriver_win64\\msedgedriver.exe");
 			driver = new EdgeDriver();
-			//	Edge code
+			// Edge code
 		}
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 
+	}
+
+	public void basePageNavigation() throws IOException {
+		driver = initializeDriver();
+		driver.get("http://www.qaclickacademy.com/");
+		driver.manage().window().maximize();
+	}
+
+	public void closeBrowser() {
+		driver.close();
 	}
 
 	/*
