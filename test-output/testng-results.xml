@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-23T13:29:20 IST" name="Default suite" finished-at="2021-12-23T13:29:51 IST" duration-ms="30758">
+  <suite started-at="2021-12-23T13:47:00 IST" name="Default suite" finished-at="2021-12-23T13:47:30 IST" duration-ms="30033">
     <groups>
     </groups>
-    <test started-at="2021-12-23T13:29:20 IST" name="Default test" finished-at="2021-12-23T13:29:51 IST" duration-ms="30758">
+    <test started-at="2021-12-23T13:47:00 IST" name="Default test" finished-at="2021-12-23T13:47:30 IST" duration-ms="30033">
       <class name="Automation.SeleniumProject.HomePage">
-        <test-method signature="loginToRahulAcadamy()[pri:0, instance:Automation.SeleniumProject.HomePage@2abf4075]" started-at="2021-12-23T13:29:20 IST" name="loginToRahulAcadamy" finished-at="2021-12-23T13:29:51 IST" duration-ms="30705" status="PASS">
+        <test-method signature="loginToRahulAcadamy()[pri:0, instance:Automation.SeleniumProject.HomePage@2abf4075]" started-at="2021-12-23T13:47:00 IST" name="loginToRahulAcadamy" finished-at="2021-12-23T13:47:30 IST" duration-ms="29986" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToRahulAcadamy -->
