@@ -5,7 +5,7 @@
     <classes>
       <class name="Automation.SeleniumProject.HomePage">
         <methods>
-          <include name="loginToQAClickAcadamy"/>
+          <include name="loginToRahulAcadamy"/>
         </methods>
       </class> <!-- Automation.SeleniumProject.HomePage -->
     </classes>

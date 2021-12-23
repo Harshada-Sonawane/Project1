@@ -40,8 +40,7 @@ public class base {
 	}
 
 	public void closeBrowser() {
-		driver.quit();
+		driver.close();
 	}
-
 
 }
