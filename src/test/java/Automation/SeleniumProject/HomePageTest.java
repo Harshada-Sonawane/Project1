@@ -7,7 +7,7 @@ import dataProvider.base;
 import pageObject.LandingPage;
 import pageObject.LoginPage;
 
-public class HomePage extends base {
+public class HomePageTest extends base {
 
 	@Test
 	public void loginToRahulAcadamy() {
