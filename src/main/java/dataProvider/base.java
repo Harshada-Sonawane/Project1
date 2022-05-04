@@ -6,10 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 public class base {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	ConfigFileReader configFileReader = new ConfigFileReader();
 
 	public WebDriver initializeDriver() {
@@ -33,12 +35,14 @@ public class base {
 
 	}
 
+	@BeforeSuite
 	public void basePageNavigation() {
 		driver = initializeDriver();
 		driver.get(configFileReader.getApplicationUrl());
 		driver.manage().window().maximize();
 	}
 
+	@AfterSuite
 	public void closeBrowser() {
 		driver.close();
 	}
